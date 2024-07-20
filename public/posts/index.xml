@@ -12,8 +12,14 @@
       <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/my-first-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/my-first-post/</guid>
-      <description>Welcome! This is Zelong Kuang 🇨🇳 from Univerisity of Melbourne. I am currently a Year 1 student at Bachelor of Science, majoring in pure mathematics.
-sd</description>
+      <description>Welcome! This is Zelong Kuang 🇨🇳 from Univerisity of Melbourne. I am currently a Year 1 student at Bachelor of Science, majoring in pure mathematics.</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/test/</guid>
+      <description>\( \int_{-\infty }^{\infty} f (x) \text{d}x \)</description>
     </item>
   </channel>
 </rss>
