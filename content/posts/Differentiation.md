@@ -31,34 +31,34 @@ First we have to define the most basic operation, that is \\(+(-), \times, \div\
 
 #### Addition {#addition}
 
-\begin{align\*}
+\begin{align*}
 (f + g)'(x) &= \lim\_{t \to x} \frac{(f+g)(t) - (f+g)(x)}{t-x} \\\\
 &= \lim\_{ t \to x } \frac{f(t) - f(x) +g(t) - g(x)}{t - x} \\\\
 &= f'(x) + g'(x)
-\end{align\*}
+\end{align*}
 
 
 #### multiplication {#multiplication}
 
 the idea is use 凑配法 to pairing up
 
-\begin{align\*}
+\begin{align*}
 fg'(x) &= \lim\_{ t \to x } \frac{fg(t) - fg(x)}{t -x} \\\\
 &= \frac{f(t)(g(t) - g(x)) + g(x)(f(t) - f(x))}{ t -x } \\\\
 &= f(x)g'(x) + g(x) f'(x)
-\end{align\*}
+\end{align*}
 
 
 #### division {#division}
 
 -   reduction method to transform to a form which is similar to the multiplication
 
-\begin{align\*}
+\begin{align*}
 \frac{f}{g}'(x) &= \lim\_{ t \to x } \frac{\frac{f}{g}(t) - \frac{f}{g}(x) }{t - x} \\\\
 &= \lim\_{ t \to x } \frac{1}{g(t)g(x)} \left( \frac{f(t)g(x)-f(x)g(t)}{t - x} \right) \\\\
 &= \lim\_{ t \to x } \frac{1}{g(t)g(x)}\left( \frac{g(x)(f(t) - f(x)) - f(x)(g(t) - g(x))}{t - x} \right) \\\\
 &= \frac{f'(x)g(x) - f(x)g'(x)}{g^{2}(x)}
-\end{align\*}
+\end{align*}
 
 
 ## chain rule {#chain-rule}
