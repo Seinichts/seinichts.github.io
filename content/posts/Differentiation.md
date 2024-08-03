@@ -2,7 +2,7 @@
 title = "Differentiation"
 author = ["Zelong Kuang"]
 tags = ["math", "todoist"]
-draft = false
+draft = true
 +++
 
 ---

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Todoist on Zelong Blog</title>
+    <link>http://localhost:1313/Seinichts/seinichts.github.io/tags/todoist/</link>
+    <description>Recent content in Todoist on Zelong Blog</description>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Seinichts/seinichts.github.io/tags/todoist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Differentiation</title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/differentiation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/differentiation/</guid>
+      <description>Normally if without any statements, \( f \) is a real-valued continuous function on \( [a,b] \) Definition of differentiation Definition For a function \(f\), defined on interval \([a,b]\). For \(x \in [a,b ]\) \[\lim_{t \to x } \frac{f(t) - f(x)}{t - x} \] is called the differentiate of f at x, denotes by \(f&amp;rsquo;(x)\).
+Apparently, to let \(f&amp;rsquo;(x)\) exists, the function has to have left/right limit (or both) at the point \(x\).</description>
+    </item>
+  </channel>
+</rss>

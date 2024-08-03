@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zelong Blog</title>
     <link>http://localhost:1313/Seinichts/seinichts.github.io/</link>
     <description>Recent content on Zelong Blog</description>
-    <generator>Hugo -- 0.129.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
+    <managingEditor>user@example.com (Hugo Author)</managingEditor>
+    <webMaster>user@example.com (Hugo Author)</webMaster>
     <atom:link href="http://localhost:1313/Seinichts/seinichts.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/manifest.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/manifest.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.es/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.fr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.fr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.hi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.hi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.jp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.jp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.pl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.pl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.ru/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.ru/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/search/_index.zh-cn/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hello!</title>
       <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
       <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/my-first-post/</guid>
       <description>Welcome! This is Zelong Kuang 🇨🇳 from Univerisity of Melbourne. I am currently a Year 1 student at Bachelor of Science, majoring in pure mathematics.</description>
     </item>
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/test/</guid>
-      <description>\( \int_{-\infty }^{\infty} f (x) \text{d}x \)</description>
+      <title>My Doom Configuration</title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/config/</guid>
+      <description>Doom modules Modules Doom has this lovely modular configuration base that takes a lot of work out of configuring Emacs. Each module (when enabled) can provide a list of packages to install (on doom sync) and configuration to be applied. The modules can also have flags applied to tweak their behaviour.&#xA;;;; init.el -*- lexical-binding: t; -*- ;; This file controls what Doom modules are enabled and what order they load in.</description>
+    </item>
+    <item>
+      <title>windows-11 Pro-education edition activation</title>
+      <link>http://localhost:1313/Seinichts/seinichts.github.io/posts/windows-11-pro-education-edition-activation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
+      <guid>http://localhost:1313/Seinichts/seinichts.github.io/posts/windows-11-pro-education-edition-activation/</guid>
+      <description> 使用激活码 J8WVF-9X3GM-4WVYC-VDHQG-42CXT 若是无法激活成功则使用 admin 打开 powershell 输入 irm massgrave.dev/get | iex 后分别输入 7 1 1 重启 再次打开 powershell 输入 irm massgrave.dev/get | iex 输入 1 即可激活 </description>
     </item>
   </channel>
 </rss>
