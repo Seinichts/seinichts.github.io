@@ -61,97 +61,94 @@ fg'(x) &= \lim\_{ t \to x } \frac{fg(t) - fg(x)}{t -x} \\\\
 \end{align\*}
 
 
-## chain rule {#chain-rule}
+## Chain rule {#chain-rule}
 
-this is the most important rule in calculation of differentiation.
-**theorem** for function \\(f, g\\), if \\(f\\) is differentiable at \\(x\\), and \\(g\\) is differentiable at \\(f(x)\\) then for \\(h := g \circ f\\).
+This is the most important rule in calculation of differentiation.
+**Theorem** For function \\(f, g\\), if \\(f\\) is differentiable at \\(x\\), and \\(g\\) is differentiable at \\(f(x)\\) then for \\(h := g \circ f\\).
 \\[h'(x) = g'(f(x))f'(x)\\]
 
 
-## mean value theorem {#mean-value-theorem}
+## Mean value theorem {#mean-value-theorem}
 
--   mean value theorem is a characterisation of the continuity of a function and its derivative.
+-   Mean value theorem is a characterisation of the continuity of a function and its derivative.
 
-there are three version of it
-**lemma** let \\(f\\) defines on \\((a,b)\\) and \\(f( c)\\) is a local maximum/minimum, then \\(f'( c) = 0\\)
+There are three version of it
+**Lemma** let \\(f\\) defines on \\((a,b)\\) and \\(f( c)\\) is a local maximum/minimum, then \\(f'( c) = 0\\)
 
-the derivative is greater than zero approaching from left hand side, and less than zero when approaching from right hand side, then by sandwich's theorem.
+The derivative is greater than zero approaching from left hand side, and less than zero when approaching from right hand side, then by sandwich's theorem.
 
 
-### **the** mean value theorem (lagrange) {#the-mean-value-theorem--lagrange}
+### **The** mean value theorem (lagrange) {#the-mean-value-theorem--lagrange}
 
-**theorem** \\(f\\) are continuous on \\([a, b]\\) and differentiable on \\((a,b)\\). then
+**Theorem** \\(f\\) are continuous on \\([a, b]\\) and differentiable on \\((a,b)\\). then
 \\[f(b) - f(a) = (b - a)f'(x)\\]
 
-> special case of generalised mean value theorem
-> let g(x) = x.
+> Special case of generalised mean value theorem:
+> Let g(x) = x.
 
 
-### generalised mean value theorem (cauchy) {#generalised-mean-value-theorem--cauchy}
+### Generalised mean value theorem (Cauchy) {#generalised-mean-value-theorem--cauchy}
 
-**theorem** \\(f\\) and \\(g\\) are continuous on \\([a,b]\\) and differentiable on \\((a,b)\\). then
-\\[ [f(b) - f(a)]g'(x) = [g(b) - g(a)]f'(x)\\]
-a geometrical interpretation is the mean value theorem for parametric function \\(x = g(t), y = f(t)\\) on \\(xy\\)-plane
-
-
-#### motivation of cauchy mvt {#motivation-of-cauchy-mvt}
-
-it generalises the mean value theorem to parametric functions.
+**Theorem** \\(f\\) and \\(g\\) are continuous on \\([a,b]\\) and differentiable on \\((a,b)\\), then
+\\[ [f(b) - f(a)]g'(x) = [g(b) - g(a)]f'(x).\\]
+A geometrical interpretation is the mean value theorem for parametric function \\(x = g(t), y = f(t)\\) on \\(xy\\)-plane
 
 
-### the continuity of derivatives {#the-continuity-of-derivatives}
+#### Motivation of Cauchy Mean value theorem {#motivation-of-cauchy-mean-value-theorem}
+
+It generalises the mean value theorem to parametric functions.
 
 
-#### the intermediate value theorem for derivative {#the-intermediate-value-theorem-for-derivative}
-
-portrays the connectedness and continuity of derivative
-
-> the difficulty of this theorem is we couldn't know the continuity of the derivative of the function (second-kind discontinuity).
-
-**theorem** suppose \\( f \\) is a real differentaible function on \\( [a,b] \\) and suppose \\( f'(a) < \lambda < f'(b) \\) (or &gt;). then there is a point \\( x \in (a,b) \\) such that \\( f'(x) = \lambda \\).
-
-> integrate it into \\( f \\) such that we could apply mean value theorem, because we know that \\( f \\) is continuous.
+### The continuity of derivatives {#the-continuity-of-derivatives}
 
 
-### l'hospital's rule {#l-hospital-s-rule}
+#### The intermediate value theorem for derivative {#the-intermediate-value-theorem-for-derivative}
 
-**theorem** suppose \\(g'(x) \ne 0\\). if
+Portrays the connectedness and continuity of derivative
+
+> The difficulty of this theorem is we couldn't know the continuity of the derivative of the function (second-kind discontinuity).
+
+**Theorem** Suppose \\( f \\) is a real differentaible function on \\( [a,b] \\) and suppose \\( f'(a) < \lambda < f'(b) \\) (or &gt;). then there is a point \\( x \in (a,b) \\) such that \\( f'(x) = \lambda \\).
+
+> Integrate it into \\( f \\) such that we could apply mean value theorem, because we know that \\( f \\) is continuous.
+
+
+### L'hospital's rule {#l-hospital-s-rule}
+
+**Theorem** Suppose \\(g'(x) \ne 0\\). if
 \\[f(x) \to 0 \text{ and } g(x) \to 0 \text{ as } x \to a\\]
 or if
-\\[g(x) \to \infty \text{ as } x \to a\\]
-then
+\\[g(x) \to \infty \text{ as } x \to a.\\]
+Then,
 \\[\frac{f(x)}{g(x)} = \frac{f'(x)}{g'(x)} \text{ as } x \to a.\\]
 
-
-#### idea {#idea}
-
-use cauchy mean value theorem to approach a upper bound and a lower bound of \\(\frac{f(x)}{g(x)}\\) and then use sandwich.
+> Use cauchy mean value theorem to approach a upper bound and a lower bound of \\(\frac{f(x)}{g(x)}\\) and then use sandwich.
 
 
-## taylor's theorem {#taylor-s-theorem}
+## Taylor's theorem {#taylor-s-theorem}
 
-> polynomial approximation of function
+> Polynomial approximation of function
 
-**theorem** suppose \\(f\\) is a real function defined on \\([a,b]\\) and \\(f^{(n-1)}\\) is continuous on \\([a, b]\\), \\(f^{(n)}\\) exists on \\((a,b)\\). for two distinct point \\(\alpha, \beta \in [a, b]\\), define
+**Theorem** Suppose \\(f\\) is a real function defined on \\([a,b]\\) and \\(f^{(n-1)}\\) is continuous on \\([a, b]\\), \\(f^{(n)}\\) exists on \\((a,b)\\). for two distinct point \\(\alpha, \beta \in [a, b]\\), define
 
-\\[p(t) = \sum\_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (t-a)^{k}\\]
+\\[p(t) = \sum\_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (t-a)^{k}.\\]
 
-then there exists \\(x \in (\alpha, \beta )\\) such that
+Then there exists \\(x \in (\alpha, \beta )\\) such that
 
 \\[
 f(\beta) = p(\beta) + \frac{f^{(n)}(x)}{n!}(\beta-\alpha)^n\\]
 
-the latter is called the remainder, and also be known as the error of the approximation.
+The latter is called the remainder, and also be known as the error of the approximation.
 
-> this is a consequence of mean value theorem. note that for n = 1, this is just the mean value theorem.
+> This is a consequence of mean value theorem. note that for n = 1, this is just the mean value theorem.
 
-1.  determine the errors from the polynomial to the function.
-2.  then show that this error is negligible
+1.  Determine the errors from the polynomial to the function.
+2.  Then show that this error is negligible
 
 
-## vector-valued functions {#vector-valued-functions}
+## Vector-valued functions {#vector-valued-functions}
 
-basically the same as dealing with 2-dimensional by letting \\(\varepsilon\\) be \\( \sqrt[n]{\varepsilon} \\). the continuity will remains according to the norm.
-but mean value theorem will become weaker on n-dimensional, since the graph of \\( f \\) now has more path from one point to another point. that, we could find a point \\( x \in (a, b) \\) such that the relation becoming no longer an equal
+Basically the same as dealing with 2-dimensional by letting \\(\varepsilon\\) be \\( \sqrt[n]{\varepsilon} \\). the continuity will remains according to the norm.
+But mean value theorem will become weaker on n-dimensional, since the graph of \\( f \\) now has more path from one point to another point. that, we could find a point \\( x \in (a, b) \\) such that the relation becoming no longer an equal:
 \\[
 \mathbf{f}(b) - \mathbf{f}(a) \le (b - a) \left| \mathbf{f}' (x) \right|\\]
