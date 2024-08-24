@@ -99,7 +99,7 @@ Note:
 -   \\( |f| \in \mathcal{R}(\alpha) \\)
 
 
-### \*[Vector-valued functions]({{< relref "../20240809-vector_valued_functions.md" >}}) {#vector-valued-functions--dot-dot-20240809-vector-valued-functions-dot-md}
+### Vector-valued functions {#vector-valued-functions}
 
 **Definition** Like differentiation, we integrate each component separately,
 \\[
