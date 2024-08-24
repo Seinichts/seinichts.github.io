@@ -12,7 +12,8 @@ draft = false
 
 -   Net force: \\( \vec{F\_{R}} = \vec{F}\_{1 \text{ on } q} + \vec{F}\_{2 \text{ on } q} + \dots\\)
 
-Electric force is similar to the gravitational but varies inversely, like \\( \lim x \text{ and } \lim \frac{1}{x} \\)
+Electric force is similar to the gravitational but varies inversely,
+like \\( \lim x \text{ and } \lim \frac{1}{x} \\)
 
 Unlike there is only attaction in gravitation, electrical has repulsion.
 
@@ -27,9 +28,9 @@ F = k\_e \frac{q\_1q\_2}{r ^2} \vec{\mathbf{r}}\\]
 
 Note:\\( k\_e  = \frac{1}{4 \pi \epsilon\_{0}} \sim 8.99\* 10 ^{9} \\) and \\( \vec{r} \\) is the unit vector on **the** direction.
 
-> Similar to Gravitational force
-> \\[
-> F = G \frac{M\_{1}M\_2}{r ^2}\\]
+Similar to Gravitational force
+\\[
+F = G \frac{M\_{1}M\_2}{r ^2}\\]
 
 We take differentiation for one of the \\( q\_{i} \\), that is
 \\[
@@ -76,16 +77,14 @@ The last equal sign follows from the linear charge density \\( \lambda \\)(\\( C
     From the following formula deduction:
 
     \begin{equation}
-    \label{eq:1}
     mg = \tau \cos \theta \implies \tau = \frac{mg}{\cos \theta}
     \end{equation}
 
     \begin{equation}
-    \label{eq:2}
     F\_{Q1} = \tau \sin \theta = mg \tan \theta = mg\frac{r\_1 / 2}{\sqrt{\ell\_2 - (\frac{r\_1}{2})^2}} = \frac{mgr\_1}{\sqrt{4\ell\_2 - r\_1 ^2}}
     \end{equation}
 
-    Then, suppose two balls, initially, are charged with \\( Q\_{1} \\). If we halve the charge in one of them, we will get a new radius, called \\( r\_2 \\), and so \\( F\_2 \\) from the equation above.
+    Then, suppose two balls, initially, are charged with \\( Q\_1 \\). If we halve the charge in one of them, we will get a new radius, called \\( r\_2 \\), and so \\( F\_2 \\) from the equation above.
 
     If we keep repeating this process, we could get a list of data.
 
@@ -157,7 +156,7 @@ arbitrary charge, q, placed at that point.
 \begin{align\*}
 \implies \vec{\tau} &= -\vec{d}\vec{E}q \sin \theta \\\\
 &= -q \vec{d} E \sin \theta \\\\
-&= |\vec{p}| \vec{E}
+&= |\vec{p}| \vec{E} \sin \theta
 \end{align\*}
 
 
@@ -169,7 +168,9 @@ arbitrary charge, q, placed at that point.
 The body of **Gauss' law** is the equation:
 
 \\[
-\Phi = \oint \vec{E} d\vec{A}\\]
+\Phi = \oint \vec{E} d\vec{A} = \frac{q\_{enclosed}}{\varepsilon\_{0}}\\]
+
+One important statement from the equation is: **the Gaussian surface of a Gaussian sphere doesn't "increase" in the sense that its surface area increases; the flux remains the same between analogous gaussian shape**. That is, the quantity of the flux doesn't matter of the size.
 
 For different shapes, the electric field lines passed through are different resulting in different \\( \Phi  \\).
 The followings are some common shapes which we might often meet.
@@ -235,11 +236,13 @@ Could also be applied to other _fields_, for example, gravitational field
         E &= \frac{\sigma}{2 \varepsilon\_{0}}
         \end{align\*}
 
+        **NOTE THAT:** The cylinder here has finite length; A super-long cylindrical wire has to discuss separately from this case.
+
     <!--list-separator-->
 
     -  An charged partitle in electric field
 
-        {{< figure src="/ox-hugo/a.drawio.svg" >}}
+        {{< figure src="/ox-hugo/a.drawio.svg" width="500px" >}}
 
         \\[
         \Delta t = \frac{L}{v\_{x}}\\]
@@ -255,7 +258,7 @@ Could also be applied to other _fields_, for example, gravitational field
 
 <!--list-separator-->
 
--  Asymmetric
+-  symmetric
 
     At the mid point of two positive,
     \\[
@@ -264,3 +267,122 @@ Could also be applied to other _fields_, for example, gravitational field
     -   Principle of Faraday's cage
 
     Will terminate inside somewhere, symetrically cancelled out(?).
+
+
+### Potential energy {#potential-energy}
+
+Displacement will create change in potential energy, from [Torque experienced in an electric field](#torque-experienced-in-an-electric-field), we have
+\\[
+d U = qE \sin \theta d\theta\\]
+Thus,
+\\[
+\Delta U = - qE \cos \theta |\_{\theta\_{i}}^{\theta\_{f}}\\]
+
+
+### Voltage {#voltage}
+
+Aka, Potential difference.
+
+Voltage is defined as potential difference per charge.
+
+
+#### Continuous charge distribution {#continuous-charge-distribution}
+
+For a single charge (isolated charge):
+
+\\[
+V = k\_e \frac{q}{r}\\]
+
+<!--list-separator-->
+
+-  Differentiate against r
+
+    Which gives that
+    \\[
+    dV = k\_e \frac{-q}{r ^2}dr\\]
+    and thus,
+    \\[
+    V = k\_e \int \frac{-q}{r ^2} dr\\]
+
+    Alternatively, we could also
+
+<!--list-separator-->
+
+-  Differentiate against q <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    Such that,
+    \\[
+    dV = k\_e \frac{dq}{r}\\]
+    \\[
+    V = k\_e \int \frac{dq}{r}\\]
+
+
+#### Electrostatic potential due to dipole {#electrostatic-potential-due-to-dipole}
+
+For a dipole, the potential difference at a random-choose point P is given by
+
+\begin{align\*}
+V\_P &= k\_e[\frac{q}{r\_+} - \frac{q}{r\_{-}}] \\\\
+&= k\_e q \frac{r\_ -- r\_+}{r\_+r\_-}
+\end{align\*}
+
+<!--list-separator-->
+
+-  Special case: when r is large enough <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    At local, \\( r\_- - r\_+ \sim  s \cos\theta \\), substitude it into the equation above will give:
+    \\[
+    V\_P = k\_eq \frac{s\cos\theta}{r ^2}
+    \\]
+    Following from [Dipole moment](#dipole-moment)
+    \\[
+    V\_p = k\_e \frac{p\cos\theta}{r ^2}\\]
+
+<!--list-separator-->
+
+-  On a thick positively charged rod <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    \begin{align\*}
+    V\_P &= k\_eq \int\_0^L \frac{dl}{\sqrt{d ^2 + l ^2 }} \\\\
+    &= k\_e q \ln(l ^2 + \sqrt{d ^2 + l ^2 })|\_0^{L} \\\\
+    &= k\_e q \ln(\frac{l^2+\sqrt{d ^2 + l ^2 }}{d})
+    \end{align\*}
+
+<!--list-separator-->
+
+-  Cone
+
+    To calculate the voltage of point p which locates above the center of a circle (they form a cone shape)
+
+    \\[
+    V = k\_e \int \frac{dq}{r}\\]
+    Here
+    \\[
+    dq = \sigma dA\\]
+    Substitution gives that,
+    \\[
+    V = k\_e \int \frac{\sigma dA}{r}\\]
+    And similar to example above, we get
+
+    \begin{align\*}
+     V\_P &= k\_e \sigma \int\_0^L \frac{x dx}{\sqrt{d ^2 + x ^2 }} \\\\
+     &= k\_e \sigma \sqrt{d ^2 + x ^2 }|^L\_{0} \\\\
+     &= k\_e \sigma (\sqrt{d ^2 + l ^2 } - d)
+    \end{align\*}
+
+
+### Capaciors {#capaciors}
+
+
+### Dieletrics {#dieletrics}
+
+
+### Circuit {#circuit}
+
+
+#### Conservation of energy {#conservation-of-energy}
+
+-   Voltage in circuit will be distributed thoroughly. Proportional to the resistance of each resistor.
+
+
+#### Ohm's Law {#ohm-s-law}
