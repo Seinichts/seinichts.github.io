@@ -17,6 +17,8 @@ like \\( \lim x \text{ and } \lim \frac{1}{x} \\)
 
 Unlike there is only attaction in gravitation, electrical has repulsion.
 
+-   Electrostatic force: \\( F = q \vec{E} \\)
+
 
 ### Electric charge {#electric-charge}
 
@@ -24,7 +26,7 @@ Unlike there is only attaction in gravitation, electrical has repulsion.
 #### Coulomb's law {#coulomb-s-law}
 
 \\[
-F = k\_e \frac{q\_1q\_2}{r ^2} \vec{\mathbf{r}}\\]
+F = k\_e \frac{q\_1q\_2}{r ^2} \vec{\mathbf{r}} = q\vec{E}\\]
 
 Note:\\( k\_e  = \frac{1}{4 \pi \epsilon\_{0}} \sim 8.99\* 10 ^{9} \\) and \\( \vec{r} \\) is the unit vector on **the** direction.
 
@@ -371,7 +373,31 @@ V\_P &= k\_e[\frac{q}{r\_+} - \frac{q}{r\_{-}}] \\\\
     \end{align\*}
 
 
-### Capaciors {#capaciors}
+### Capacitors <span class="tag"><span class="ATTACH">ATTACH</span></span> {#capacitors}
+
+{{< figure src="/ox-hugo/Screenshot 2024-08-24 at 4.51.18 PM.png" width="200px" >}}
+
+For capacitors: \\( q = CV \\).
+
+But also, by [Gauss' Law](#gauss-law), we also know that
+\\[
+V = Ed = \frac{qd}{\varepsilon\_{0}A}\\]
+This implies that
+\\[
+C = \frac{q}{V} = \frac{\varepsilon\_0A}{d}\\]
+
+Moreover,
+\\[
+U = \frac{1}{2} q V = \frac{1}{2} C V ^2
+\\]
+We can substitude the variation above to make it to be a equation contain `q and d only`.
+\\[
+U = \frac{q ^2 d}{2 \varepsilon\_{0}A}\\]
+or `E and D`:
+\\[
+U = \frac{1}{2} qEd = \frac{1}{2} \varepsilon\_{0}Ad E ^2 \\]
+
+-   Ad: the volume between two capacitor plates.
 
 
 ### Dieletrics {#dieletrics}
@@ -380,9 +406,91 @@ V\_P &= k\_e[\frac{q}{r\_+} - \frac{q}{r\_{-}}] \\\\
 ### Circuit {#circuit}
 
 
+#### [Capacitors](#capacitors) in circuit {#capacitors--orge106d23--in-circuit}
+
+<!--list-separator-->
+
+-  Parallel <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    For two capacitors in parallel,
+
+    {{< figure src="/ox-hugo/Screenshot 2024-08-24 at 5.17.39 PM.png" width="500px" >}}
+
+    Voltage is the same throughout both capacitor, such that
+    \\[
+    q\_1 = C\_1 V \hspace{20px} q\_{2} = C\_{2} V\\]
+    Since \\( q = q\_1 + q\_2 \\), we get \\( C = C\_{1} + C\_{2} \\). This can be generalised.
+
+<!--list-separator-->
+
+-  Series <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    For two capacitors in series,
+    <img src="/ox-hugo/Screenshot 2024-08-24 at 5.21.07 PM.png" alt="Screenshot 2024-08-24 at 5.21.07 PM.png" width="200px" />
+    we know the voltage adds up, so
+    \\[
+    V = \Sigma V\_{i} = \Sigma \frac{q}{C\_{i}}\\]
+    We get
+    \\[
+    \frac{1}{C} = \sum\_{}^{}\frac{1}{C\_{i}}\\]
+
+
 #### Conservation of energy {#conservation-of-energy}
 
 -   Voltage in circuit will be distributed thoroughly. Proportional to the resistance of each resistor.
 
 
+#### Current density {#current-density}
+
+\\( J = \frac{di}{dA} \implies i = \int J dA\\)
+
+
 #### Ohm's Law {#ohm-s-law}
+
+\\[
+V = IR\\]
+
+
+### Magnetism {#magnetism}
+
+Magnetism is due to an interaction between moving charges.
+
+
+#### Magnetic force <span class="tag"><span class="ATTACH">ATTACH</span></span> {#magnetic-force}
+
+\\[
+F = q \vec{v} \times \vec{B}\\]
+Compare to [Electric Force](#electric-force) (\\( \vec{F} = q \vec{E} \\)), \\( \vec{E} = \vec{v} \times \vec{B} \\)
+
+{{< figure src="/Users/zelong/Library/CloudStorage/OneDrive-Personal/orgnotes/Screenshot 2024-08-24 at 6.51.45 PM.png" width="300px" >}}
+
+
+#### Magnetic flux {#magnetic-flux}
+
+For magnetic flux through a closed surface, we could refer to [Gauss' Law](#gauss-law) that,
+\\[
+\Phi\_{B} = \oint \vec{B} d \vec{S}\\]
+
+-   \\( \vec{B} \\) is magnetic field and can adds up (superposition).
+
+<!--list-separator-->
+
+-  Biot-Savart law <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    For a single charge,
+    \\[
+    \vec{B} = \frac{\mu\_0}{4\pi} \frac{q}{r ^2} (\vec{v} \times \vec{r})\\]
+
+    -   Permeability constant: \\( \mu\_0 = 4\pi \times 10^{-7} TmA^{-1} \\)
+
+    However, we are more often to deal with current, by \\( i = \frac{dq}{dt} \\),
+
+    {{< figure src="/ox-hugo/Screenshot 2024-08-25 at 7.29.49 PM.png" width="300px" >}}
+
+    -   \\( dl = v dt \\)
+
+    \begin{align\*}
+    d\vec{B} &= \frac{\mu\_0}{4\pi} \frac{dq}{r ^2} (\vec{v} \times \vec{r}) \\\\
+    d\vec{B} &= \frac{\mu\_0}{4\pi} \frac{idt}{r ^2} (\frac{dl}{dt} \times \vec{r}) \\\\
+    &= \frac{\mu\_{0}}{4\pi} \frac{id\vec{l} \times \vec{r}}{r ^2}
+    \end{align\*}
