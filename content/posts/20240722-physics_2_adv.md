@@ -413,11 +413,105 @@ U = \frac{1}{2} qEd = \frac{1}{2} \varepsilon\_{0}Ad E ^2 \\]
 #### Dieletrics {#dieletrics}
 
 
+#### Current, Resistance {#current-resistance}
+
+<!--list-separator-->
+
+-  Current
+
+    -   Current is the flow of charges, so we define it by
+
+    \\[ i = \frac{dq}{dt}\\]
+
+    current in battery will establishes a `non-equilibrium` electric field.
+
+<!--list-separator-->
+
+-  Current density <span class="tag"><span class="ATTACH">ATTACH</span></span>
+
+    {{< figure src="/Users/zelong/Library/CloudStorage/OneDrive-Personal/orgnotes/Screenshot 2024-09-01 at 4.02.08 PM.png" width="400" >}}
+
+    \\[ J = \frac{di}{dA} \implies i = \int J dA\\]
+    Rearranging we get,
+    \\[
+    J = \frac{i}{A} (Am^{-2})\\]
+
+    <!--list-separator-->
+
+    -  Relation between density and drifting speed
+
+        -   \\( n\_e \\) is the density of conduction electrons
+
+        Number of charges through a volume over dt is equal to \\(n\_{e}Av\_{drift}dt \\)
+
+        \begin{align\*}
+        \implies dq = en\_{e}Av\_{d}dt \\\\
+        \implies i = \frac{dq}{dt} = e n\_e A v\_{d} \implies J = \frac{i}{A} = e n\_{e}v\_d
+        \end{align\*}
+
+<!--list-separator-->
+
+-  Resistivity and conductivity
+
+    For electron in E-field:
+    \\[
+    F = qE = ma \implies a = \frac{qE}{m}\\]
+    During the drift of electron, it will keep repeating of being halted when it collides on other electrons and then accelerates back up.
+    If we estimate an average accelerating time by \\( \tau \\), the drift speed, on average, will be
+    \\[
+    v\_d = a\tau = \frac{qE\tau}{m}\\]
+    On the other hand, from [Relation between density and drifting speed](#relation-between-density-and-drifting-speed), we also know that
+    \\[
+    v\_d = \frac{J}{qn\_{e}}\\]
+    Combining we get,
+    \\[
+    E = \frac{m}{e^2 n\_{e}\tau}J \hspace{20px} J = \frac{e^2n\_{e}\tau}{m} E \\]
+
+    <!--list-separator-->
+
+    -  Conductivity
+
+        \\[
+        J = \frac{e^2n\_{e}\tau}{m} E
+        \\]
+        Define the coefficient \\( \sigma = \frac{e^2n\_e\tau}{m} \implies J = \sigma E\\) to be the conductivity.
+
+    <!--list-separator-->
+
+    -  Resistivity
+
+        \\[ E = \frac{m}{e^2 n\_{e}\tau}J \\]
+
+        Define the coefficient \\( \rho = \frac{1}{\sigma} = \frac{m}{e^2 n\_{e}\tau} \implies E = \rho J \\) to be the resistivity.
+
+<!--list-separator-->
+
+-  Resistance in wire
+
+    Given that,
+    \\[
+    J = \frac{i}{A} = \frac{E}{\rho} = \frac{V}{l\rho}\\]
+    We have,
+    \\[
+    R = \frac{\rho L}{A}\\]
+
+<!--list-separator-->
+
+-  Ohm's Law
+
+    \\[
+    V = IR\\]
+
+
 #### Circuit {#circuit}
 
 <!--list-separator-->
 
 -  [Capacitors](#capacitors) in circuit
+
+    Capacitor will storage charges in two plates. The capacitor
+    has a threshold of being charged due to the repelling force of
+    residing charges, so called capacitance.
 
     <!--list-separator-->
 
@@ -437,6 +531,7 @@ U = \frac{1}{2} qEd = \frac{1}{2} \varepsilon\_{0}Ad E ^2 \\]
     -  Series <span class="tag"><span class="ATTACH">ATTACH</span></span>
 
         For two capacitors in series,
+
         <img src="/ox-hugo/Screenshot 2024-08-24 at 5.21.07 PM.png" alt="Screenshot 2024-08-24 at 5.21.07 PM.png" width="200px" />
         we know the voltage adds up, so
         \\[
@@ -447,22 +542,25 @@ U = \frac{1}{2} qEd = \frac{1}{2} \varepsilon\_{0}Ad E ^2 \\]
 
 <!--list-separator-->
 
--  Conservation of energy
+-  Kirchhoff rules
 
-    -   Voltage in circuit will be distributed thoroughly. Proportional to the resistance of each resistor.
+    <!--list-separator-->
 
-<!--list-separator-->
+    -  Conservation of charge
 
--  Current density
+        -   At each node, this always holds
 
-    \\( J = \frac{di}{dA} \implies i = \int J dA\\)
+        \\[
+        \sum\_{}^{}i = 0\\]
 
-<!--list-separator-->
+    <!--list-separator-->
 
--  Ohm's Law
+    -  Conservation of energy
 
-    \\[
-    V = IR\\]
+        -   Voltage in circuit will be distributed thoroughly. Proportional to the resistance of each resistor.
+
+        \\[
+        \sum\_{}^{}V + \sum\_{}^{}iR + \sum\_{}^{}\frac{q}{C} = 0\\]
 
 
 ### Magnetism {#magnetism}
